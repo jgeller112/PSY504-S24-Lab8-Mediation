@@ -9,9 +9,9 @@ output:
     fig_height: 10
     toc: true
     toc_depth: 1
-  execute:
-    warning: false
-    message: false
+execute:
+  warning: false
+  message: false
 ---
 
 ## Data
@@ -19,6 +19,12 @@ output:
 For this lab, we will replicate the mediation results of Cho et al.'s (2023) study titled "Changes in Medial Prefrontal Cortex Mediate Effects of Heart Rate Variability Biofeedback on Positive Emotional Memory Biases." On page 7 of the article, the authors provide a path diagram (Fig. 2) of the mediation model they employed. The data for the mediation analysis can be found at https://osf.io/t5s4z/.
 
 ## Task
+
+```{r}
+library(tidyverse)
+
+```
+
 
 Your task is to reproduce the study by Cho et al. (2023) by following the steps below:
 
