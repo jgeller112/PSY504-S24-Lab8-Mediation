@@ -1,30 +1,19 @@
 ---
 title: "Lab 08: Mediation"
+author: ""
 subtitle: "Lab 8"
-output: 
-  tufte::tufte_html:
-    css: 
-    tufte_variant: "envisioned"
-    highlight: pygments
-    fig_height: 10
-    toc: true
-    toc_depth: 1
-execute:
-  warning: false
-  message: false
 ---
+
+- Please make sure your HTML document does not contain warnings or messages. If you forgot how to do this  ask me 
+
+- Make sure summary output is presented in a nice table
+
 
 ## Data
 
 For this lab, we will replicate the mediation results of Cho et al.'s (2023) study titled "Changes in Medial Prefrontal Cortex Mediate Effects of Heart Rate Variability Biofeedback on Positive Emotional Memory Biases." On page 7 of the article, the authors provide a path diagram (Fig. 2) of the mediation model they employed. The data for the mediation analysis can be found at https://osf.io/t5s4z/.
 
-## Task
-
-```{r}
-library(tidyverse)
-
-```
-
+## Instructions
 
 Your task is to reproduce the study by Cho et al. (2023) by following the steps below:
 
@@ -32,11 +21,19 @@ Your task is to reproduce the study by Cho et al. (2023) by following the steps 
 
 > Test for mediation using the joint significance test
 
-> Use the Lavaan package to run the mediation model and calculate the bootstrapped indirect effect
+> Use the Lavaan package (https://lavaan.ugent.be/) to run the mediation model and calculate the bootstrapped indirect effect. You will need to make sure you get percentile bootstrap CIs (I provided code below). 
+
+```{r}
+#| eval: false
+
+#lavaan code to get 95% percentile bootstrapped cis
+lavaan::paramterestimates(model, ci=TRUE, level=0.95,  boot.ci.type="perc")
+
+```
 
 > Create a path model diagram (labeling things appropiately) using your preferred software
 
-> Write-up a report using APA style and provide a discussion of the findings. Discuss if there is mediation according to the causual steps, joint significance, and bootrapped approaches. If there are any differences between your analysis and Cho et al. please describe them. 
-Additionally, share your thoughts on how the authors shared their data
+> Write-up a report using APA style and provide a discussion of the findings. Discuss all paths and whether there is mediation according to the causual steps, joint significance, and the bootstrapped approaches. If there are any differences between your analysis and Cho et al. please describe them. 
+Additionally, share your thoughts on how the authors shared their data.
 
 
