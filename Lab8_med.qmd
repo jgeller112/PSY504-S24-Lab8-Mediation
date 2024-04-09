@@ -4,10 +4,9 @@ author: ""
 subtitle: "Lab 8"
 ---
 
-- Please make sure your HTML document does not contain warnings or messages. If you forgot how to do this  ask me 
+- Please make sure your HTML document does not contain warnings or messages. If you forgot how to do this ask me 
 
 - Make sure summary output is presented in a nice table
-
 
 ## Data
 
@@ -15,7 +14,7 @@ For this lab, we will replicate the mediation results of Cho et al.'s (2023) stu
 
 ## Instructions
 
-Your task is to reproduce the study by Cho et al. (2023) by following the steps below:
+In a new .qmd document, reproduce the study by Cho et al. (2023) by following the steps below:
 
 > Apply Baron & Kenny's causal steps approach to test their mediation model
 
