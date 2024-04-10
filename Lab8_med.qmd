@@ -26,7 +26,7 @@ In a new .qmd document, reproduce the study by Cho et al. (2023) by following th
 #| eval: false
 
 #lavaan code to get 95% percentile bootstrapped cis
-lavaan::paramterestimates(model, ci=TRUE, level=0.95,  boot.ci.type="perc")
+lavaan::parameterestimates()(model, ci=TRUE, level=0.95,  boot.ci.type="perc")
 
 ```
 
@@ -34,4 +34,3 @@ lavaan::paramterestimates(model, ci=TRUE, level=0.95,  boot.ci.type="perc")
 
 > Write-up a report using APA style and provide a discussion of the findings. Discuss all paths and whether there is mediation according to the causual steps, joint significance, and the bootstrapped approaches. If there are any differences between your analysis and Cho et al. please describe them. 
 Additionally, share your thoughts on how the authors shared their data.
-
